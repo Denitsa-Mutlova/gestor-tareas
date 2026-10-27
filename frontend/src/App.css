@@ -1,0 +1,30 @@
+/* ── ESTILOS GLOBALES ── */
+#root {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+/* ── ANIMACIÓN: aparición de filas de la tabla ── */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fila-animada {
+  animation: fadeInUp 0.3s ease-in-out;
+}
+
+/* ── TRANSICIÓN en botones ── */
+.boton-animar {
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.boton-animar:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.boton-animar:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
